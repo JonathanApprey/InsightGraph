@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
-import path from "path";
 
 const nextConfig: NextConfig = {
-  // Set output file tracing root to the frontend directory
-  outputFileTracingRoot: path.join(__dirname),
+  // Enable standalone output for Docker deployment
+  output: "standalone",
+
+  // Disable telemetry
+  telemetry: false,
 };
 
 export default nextConfig;
