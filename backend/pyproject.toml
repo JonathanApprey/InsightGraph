@@ -1,9 +1,14 @@
-[tool.poetry]
+[project]
 name = "insightgraph-backend"
-version = "0.1.0"
-description = "Agentic RAG Platform - Backend API"
-authors = ["Jonathan Ekowo-Apprey"]
+version = "1.0.0"
+description = "Agentic RAG Platform - Backend API powered by LangGraph"
 readme = "README.md"
+requires-python = ">=3.11,<3.13"
+authors = [
+    {name = "Jonathan Ekowo-Apprey"}
+]
+
+[tool.poetry]
 packages = [{include = "app"}]
 
 [tool.poetry.dependencies]
@@ -42,7 +47,6 @@ sse-starlette = "^2.1.0"
 
 # Utilities
 python-dotenv = "^1.0.0"
-duckduckgo-search = "^8.1.1"
 tenacity = "^9.1.2"
 slowapi = "^0.1.9"
 
